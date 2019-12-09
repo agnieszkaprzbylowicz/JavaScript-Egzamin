@@ -6,6 +6,7 @@ const Test = document.getElementsByClassName("sample_class");
 
 function getTagsofElements(kwadrat){
     let arr1 = [];
+
     for(let i = 0; i< kwadrat.length; i++)
         Array.push(kwadrat[i].tagName);
     
@@ -20,6 +21,7 @@ const Test = document.getElementById("sample_id");
 
 function getClassesOfElement(kolo) {
     let arr2 = [];
+
     arra2 = kolo.className.split(" ");
     return arr2;
 }
@@ -34,6 +36,7 @@ const el1li = eliu1.children;
 
 function getInnerTextOfElements(kolo){
     let arr3 = [];
+
     for(let i=0; i<kolo.length; i++)
     arr3.push(kolo[i].innerText);
 
@@ -47,6 +50,7 @@ console.log(getInnerTextOfElements(el1li));
 const links = document.querySelectorAll("a");
 function getAddressesOfElement(nazwa){
     let arr4 = [];
+    
     for(let i=0; i<nazwa.length; i++)
     arr4.push(nazwa[i].getAtribute("href"));
 
@@ -55,7 +59,7 @@ function getAddressesOfElement(nazwa){
         arr4.pop(nazwa); 
     });
     return arr4;
-
+}
     console.log(getAddressesOfElement(links));
 
     //Punkt 5
@@ -67,5 +71,5 @@ function getAddressesOfElement(nazwa){
     console.log(getTagsofElements(Par1chl))
 
 
-}
+
 
